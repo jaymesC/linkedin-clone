@@ -3,6 +3,9 @@ import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import ChatIcon from "@material-ui/icons/Chat";
+import NotificationIcon from "@material-ui/icons/Notifications";
 import HeaderOption from "./HeaderOption";
 
 function Header() {
@@ -22,6 +25,9 @@ function Header() {
       <div className="header__right">
           <HeaderOption Icon={HomeIcon} title="Home" />
           <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
+          <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
+          <HeaderOption Icon={ChatIcon} title="Messaging" />
+          <HeaderOption Icon={NotificationIcon} title="Notifications" />
       </div>
     </div>
   );
