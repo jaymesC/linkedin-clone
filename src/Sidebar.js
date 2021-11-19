@@ -18,7 +18,7 @@ function Sidebar() {
       <div className="sidebar__stats">
         <div className="sidebar__stat">
           <p>Who viewed you</p>
-          <p className="sidebar__statNumber">2,671</p>
+          <p className="sidebar__statNumber">2,673</p>
         </div>
         <div className="sidebar__stat">
           <p>Who viewed you</p>

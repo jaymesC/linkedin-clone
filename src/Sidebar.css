@@ -37,3 +37,23 @@
     display: flex;
     justify-content: space-between;
 }
+
+.sidebar__stat > p {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar__stats {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar__statNumber {
+    font-weight: bold;
+    color: #0a66c2 !important;
+}
