@@ -10,7 +10,6 @@ function App() {
 
       <div className="app__body">
         <Sidebar />
-
       </div>
     </div>
   );
