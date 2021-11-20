@@ -27,3 +27,7 @@
     font-size: 15px;
 }
 
+.post__buttons {
+    display: flex;
+}
+
