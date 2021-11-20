@@ -19,3 +19,11 @@
     color: gray;
 }
 
+.post__body {
+    overflow-wrap: anywhere;
+}
+
+.post__info > h2 {
+    font-size: 15px;
+}
+
