@@ -33,7 +33,7 @@ function Feed() {
       description: "testing code...",
       message: input,
       photoUrl: "",
-      timesamp: firebase.firestore.fieldValue.serverTimestamp(),
+      timesamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
   };
 
@@ -66,8 +66,14 @@ function Feed() {
       </div>
 
       {/* Posts */}
-      {posts.map((post) => (
-        <Post />
+      {posts.map(({id, data: { name, description, message, photoUrl}}) => (
+        <Post 
+        key={id}
+        name={name}
+        description={description}
+        message={message}
+        photoUrl={photoUrl}
+        />
       ))}
       <Post name="Jay Jay" description="testing..." message="wow, Awesome!" />
     </div>
