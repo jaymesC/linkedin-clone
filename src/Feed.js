@@ -16,7 +16,7 @@ function Feed() {
 
   useEffect(() => {
     db.collection("posts")
-    //   .orderBy("timestamp", "asc") 
+    //   .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) =>
         setPosts(
           snapshot.docs.map((doc) => ({
@@ -35,7 +35,7 @@ function Feed() {
       description: "testing code...",
       message: input,
       photoUrl: "",
-      timesamp: firebase.firestore.FieldValue.serverTimestamp(),
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
     setInput("");
