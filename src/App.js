@@ -4,6 +4,7 @@ import "./App.css";
 import { selectUser } from "./features/userSlice";
 import Feed from "./Feed";
 import Header from "./Header";
+import Login from "./Login";
 import Sidebar from "./Sidebar";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <div className="app">
       <Header />
 
-      {user ? (
+      {!user ? (
         <Login />
       ) : (
         <div className="app__body">
