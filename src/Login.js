@@ -1,8 +1,14 @@
+import { useState } from "react";
+import { auth } from "./firebase";
 import "./Login.css";
 
 function Login() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [name, setName] = useState("");
 
-    const loginToApp = () => {
+    const loginToApp = (e) => {
+        e.preventDefault();
 
     }
 
@@ -18,7 +24,7 @@ function Login() {
       <form>
         <input placeholder="Full name (required if registering)" type="text" />
         <input placeholder="Profile pic URL (optional)" type="text" />
-        <input placeholder="Email" type="email" />
+        <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" />
         <input placeholder="Password" type="password" />
 
         <button type="submit" onclick={loginToApp}>
