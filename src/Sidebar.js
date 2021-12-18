@@ -40,7 +40,7 @@ function Sidebar() {
         {recentItem('programming')}
         {recentItem('nextjs')}
         {recentItem('tailwind')}
-        {recentItem('Web3')}
+        {recentItem('web3')}
       </div>
     </div>
   );
