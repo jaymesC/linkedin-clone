@@ -1,15 +1,16 @@
-import React from 'react';
-import './Widget.css';
+import React from "react";
+import "./Widget.css";
 import InfoIcon from "@material-ui/icons/Info";
 
-
 function Widgets() {
-    return (
-        <div className="widgets">
-            <h2>LinkedIn News</h2>
-            <InfoIcon />
-        </div>
-    )
+  return (
+    <div className="widgets">
+      <div className="widget__header">
+        <h2>LinkedIn News</h2>
+        <InfoIcon />
+      </div>
+    </div>
+  );
 }
 
 export default Widgets;
