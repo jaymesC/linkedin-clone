@@ -6,11 +6,11 @@ import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 function Widgets() {
 
     const newsArticle = (heading, subtitle) => {
-        <div className="widget__article">
-            <div className="widget__articleLeft">
+        <div className="widgets__article">
+            <div className="widgets__articleLeft">
                 <FiberManualRecordIcon />
             </div>
-            <div className="widget__articleRight">
+            <div className="widgets__articleRight">
                 <h4>{heading }</h4>
                 <p>{subtitle }</p>
             </div>
