@@ -34,10 +34,10 @@ function Feed() {
     e.preventDefault();
 
     db.collection("posts").add({
-      name: "Jay Jay",
-      description: "testing code...",
+      name: user.displayName,
+      description: user.email,
       message: input,
-      photoUrl: "",
+      photoUrl: user.photoUrl || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
