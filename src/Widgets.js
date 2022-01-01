@@ -22,7 +22,12 @@ function Widgets() {
       <div className="widget__header">
         <h2>LinkedIn News</h2>
         <InfoIcon />
-      </div>
+          </div>
+          {newsArticle("PAPA React is back", "Top news - 999 readers")}
+          {newsArticle("Web3 the future of the web?", "Top news - 1039 readers")}
+          {newsArticle("Tesla heits new highs", "Cars and Auto - 373 readers")}
+          {newsArticle("Crypto and Blockchain development", "Crypto - 1223 readers")}
+          {newsArticle("PAPA React launches new course!", "Top news - 435 readers")}
     </div>
   );
 }
