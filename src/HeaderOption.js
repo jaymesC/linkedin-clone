@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 import './HeaderOption.css'
 
-function HeaderOption({ avatar, Icon, title, onClick }) {
+function HeaderOption({ avatar, Icon, title}) {
     const user = useSelector(selectUser)
 
     return (
